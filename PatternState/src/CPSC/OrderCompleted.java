@@ -18,7 +18,4 @@ public class OrderCompleted implements Cake {
 		// TODO Auto-generated method stub   
         System.out.println("Cake is ready for Delivery as per Cake Order");
     }
-
-	
-
 }
