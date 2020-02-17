@@ -2,21 +2,14 @@ package CPSC;
 
 public class BakedCake implements Cake {
 	
-	//Singleton
-	private static BakedCake order  = new  BakedCake();
-
-	private  BakedCake() {}
-
-	public static BakedCake order() {
-	    return  order;
-	}
 
 	@Override
-	public void updateStatus(DeliveryCake cake) {
+	public void updateStatus(DeliveryCake cake, String state) {
 		
 		{
-		    System.out.println("Cake Baked");
-		    cake.setCurrentState(DecoCake.order());
+			System.out.println( state + " Cake is Baked");
+		    cake.setCurrentState(new DecoCake());
+		   
 		}
 	}
 }

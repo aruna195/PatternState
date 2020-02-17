@@ -2,23 +2,22 @@ package CPSC;
 
 public class Acknowledge implements Cake {
 	
-	//Singleton
-    private static Acknowledge  order = new Acknowledge();
- 
-    private Acknowledge() {}
- 
-    public static Acknowledge order() {
-        return order;
-    }
-    
+	
   
+
+	
+
 	@Override
-	public void updateStatus(DeliveryCake cake) {
-		  
-	        System.out.println("Cake Details received by Baker");
-	        cake.setCurrentState( Batter.order());
-	    }
+	public void updateStatus(DeliveryCake cake, String state) {
+		// TODO Auto-generated method stub
+		System.out.println(state + " in Process");
+        cake.setCurrentState( new BakedCake());
+}
+
+		
 	}
+	
+
 
 		
 	

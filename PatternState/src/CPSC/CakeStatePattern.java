@@ -4,13 +4,15 @@ public class CakeStatePattern {
 
 	    public static void main(String[] args) 
 	    {
-	        DeliveryCake cake = new DeliveryCake(null, 001);          
-	         
-	        cake.update();
-	        cake.update();
-	        cake.update();
-	        cake.update();
-	        cake.update(); 
+	        DeliveryCake cake = new DeliveryCake();          
+	        cake.update("Cake Order");
+	        cake.update("Chocolate");
+	        cake.update("Strawberries");
+	        cake.update("OrderComplete");
+	       
+	        
+	        
+	      
 	    }
 
 
